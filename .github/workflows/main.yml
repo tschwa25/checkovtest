@@ -17,5 +17,5 @@
                 uses: bridgecrewio/checkov-action@master
                 with:
                   directory: tfinfra/
-                  skip_check: CKV_GCP_39, CKV_GCP_38, CKV_GCP_30, CKV_GCP_32 # optional: skip a specific check_id
+                  skip_check: CKV_GCP_39 # optional: skip a specific check_id
                   # quiet: true # optional: display only failed checks
