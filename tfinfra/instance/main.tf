@@ -11,7 +11,7 @@ resource "google_compute_instance" "vm_instance" {
     #checkov:skip=CKV_GCP_39:Not needed weil bloed
     #checkov:skip=CKV_GCP_38:Not needed
     #checkov:skip=CKV_GCP_30:Not needed
-    #checkov:skip=CKV_GCP_32:Not needed
+    # asdasd   checkov:skip=CKV_GCP_32:Not needed
 
     name = "$(var.instance_name)"
     zone = "$(var.instance_zone)"
