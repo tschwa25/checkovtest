@@ -6,12 +6,7 @@ variable "instance_type" {
 variable "instance_subnetwork" {}
 
 resource "google_compute_instance" "vm_instance" {  
-    # Following lines define tests to be skipped
-
-    #checkov:skip=CKV_GCP_39:Not needed weil bloed
-    #checkov:skip=CKV_GCP_38:Not needed
-    #checkov:skip=CKV_GCP_30:Not needed
-    #heckov:skip=CKV_GCP_32: you shouldnt see this
+    # Following lines define checks to be skipped
 
     name = "$(var.instance_name)"
     zone = "$(var.instance_zone)"
