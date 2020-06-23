@@ -17,5 +17,5 @@
                 uses: bridgecrewio/checkov-action@master
                 with:
                   directory: tfinfra/
-    #               skip_check: CKV_AWS_1 # optional: skip a specific check_id
-                  quiet: true # optional: display only failed checks
+                  # skip_check: CKV_AWS_1 # optional: skip a specific check_id
+                  # quiet: true # optional: display only failed checks
