@@ -8,6 +8,9 @@ variable "instance_subnetwork" {}
 resource "google_compute_instance" "vm_instance" {  
     # Following lines define checks to be skipped
 
+    # checkov:skip=CKV_GCP_30:The bucket is a public static content host
+    # checkov:skip=CKV_GCP_32:The bucket is a public static content host
+    # checkov:skip=CKV_GCP_38:The bucket is a public static content host
     name = "$(var.instance_name)"
     zone = "$(var.instance_zone)"
     machine_type = "$var.instance_type"
